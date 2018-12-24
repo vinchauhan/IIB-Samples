@@ -7,3 +7,4 @@ pipeline:
     commands:
       - goiib clean
       - goiib compile
+      - goiib package
