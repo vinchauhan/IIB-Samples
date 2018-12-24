@@ -3,7 +3,7 @@ workspace:
   path: /artifacts
 pipeline:
   build:
-    image: esoa-iib:rc
+    image: vinchauhan/vinchauhan-iib:latest
     commands:
       - goiib clean
       - goiib compile
