@@ -1,6 +1,6 @@
 workspace:
-  base: /
-  path: /build
+  base: /build
+  path: /artifacts
 pipeline:
   build:
     image: esoa-iib:rc
