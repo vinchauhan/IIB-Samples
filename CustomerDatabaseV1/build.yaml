@@ -1,0 +1,23 @@
+project: 
+ modelVersion: "4.0.0"
+ groupId: "com.springular.iib"
+ artifactId: CustomerDatabaseV1
+ version: "0.0.1-SNAPSHOT"
+ packaging: bar
+ profiles: 
+  profile: 
+   id: localdev
+   activation: 
+    activeByDefault: true
+   properties: 
+    workspace: "/build/"
+    initialDeletes: "**/*.jar"
+    unpackIibDependenciesIntoWorkspace: true
+    pathToMqsiProfileScript: "C:\\Program Files\\IBM\\IIB\\10.0.0.7\\server\\bin\\mqsiprofile.cmd"
+    failOnInvalidProperties: true
+    useClassloaders: false
+    failOnInvalidClassloader: true
+    createOrPackageBar: create
+    completeDeployment: true
+    timeoutSecs: 600
+    mqsiCreateBarDeployAsSource: true
