@@ -4,7 +4,7 @@ workspace:
 pipeline:
   build:
     image: vinchauhan/vinchauhan-iib:latest
-    commands:
-      - goiib clean
-      - goiib compile
-      - goiib package
+    # commands:
+    #   - goiib clean
+    #   - goiib compile
+    #   - goiib package
