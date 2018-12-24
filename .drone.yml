@@ -8,3 +8,6 @@ pipeline:
     #   - goiib clean
     #   - goiib compile
     #   - goiib package
+    environment:
+      - LICENSE=accept  
+      
