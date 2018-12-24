@@ -1,0 +1,10 @@
+workspace:
+  base: /
+  path: /build
+pipeline:
+  build:
+    image: esoa-iib:rc
+    commands:
+      - goiib clean
+      - goiib compile
+      - goiib package
