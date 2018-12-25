@@ -6,7 +6,7 @@ pipeline:
     image: vinchauhan/my-iib:rc
     commands:
       - cd CustomerDatabaseV1
-      - export PATH=$PATH:/build/
+      - export PATH=$PATH:/build/:/opt/ibm/iib-10.0.0.10/server/bin/
       - /usr/local/bin/iib_env.sh
       - goiib clean
       - goiib compile
