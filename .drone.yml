@@ -1,13 +1,13 @@
 workspace:
-  base: /build
-  path: /artifacts
+  base: /artifacts
+  path: /repo
 pipeline:
   build:
     image: vinchauhan/my-iib:rc
     commands:
-      # - cd CustomerDatabaseV1
-      # - goiib clean
-      # - goiib compile
+      - cd CustomerDatabaseV1
+      - source mqsiprofile
+      - mqsicreatebar
     environment:
       - LICENSE=accept  
       
