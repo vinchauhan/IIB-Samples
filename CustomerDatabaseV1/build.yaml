@@ -10,7 +10,7 @@ project:
    activation: 
     activeByDefault: true
    properties: 
-    workspace: "/build/"
+    workspace: "/artifacts/repo"
     initialDeletes: "**/*.jar"
     unpackIibDependenciesIntoWorkspace: true
     pathToMqsiProfileScript: "C:\\Program Files\\IBM\\IIB\\10.0.0.7\\server\\bin\\mqsiprofile.cmd"
