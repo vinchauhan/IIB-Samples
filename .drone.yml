@@ -5,9 +5,9 @@ pipeline:
   build:
     image: vinchauhan/my-iib:rc
     commands:
-      - cd CustomerDatabaseV1
-      - goiib clean
-      - goiib compile
+      # - cd CustomerDatabaseV1
+      # - goiib clean
+      # - goiib compile
     environment:
       - LICENSE=accept  
       
