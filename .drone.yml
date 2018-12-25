@@ -6,7 +6,9 @@ pipeline:
     image: vinchauhan/my-iib:rc
     commands:
       - cd CustomerDatabaseV1
-      - source mqsiprofile
+      - export PATH=$PATH:/build/
+      - goiib clean
+      - goiib compile
     environment:
       - LICENSE=accept  
       
