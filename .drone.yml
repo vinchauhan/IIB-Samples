@@ -3,7 +3,7 @@ workspace:
   path: /artifacts
 pipeline:
   build:
-    image: vinchauhan/vinchauhan/my-iib:rc
+    image: vinchauhan/my-iib:rc
     commands:
       - cd CustomerDatabaseV1
       - goiib clean
