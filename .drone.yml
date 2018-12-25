@@ -7,7 +7,7 @@ pipeline:
     commands:
       - cd CustomerDatabaseV1
       - export PATH=$PATH:/build/
-      - . /opt/ibm/iib-10.0.0.10/server/bin/mqsiprofile
+      - /usr/local/bin/iib_env.sh
       - goiib clean
       - goiib compile
     environment:
