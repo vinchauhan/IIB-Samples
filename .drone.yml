@@ -8,9 +8,9 @@ pipeline:
       - go get -u github.com/vinchauhan/goiib
       - go build
       - go install
-workspace:
-  base: /artifacts
-  path: /iib
+# workspace:
+#   base: /artifacts
+#   path: /iib
 pipeline:
   build:
     image: vinchauhan/my-iib:rc
