@@ -15,6 +15,7 @@ pipeline:
   build:
     image: vinchauhan/my-iib:rc
     commands:
+      - sudo apt-get install go
       - go get -u github.com/vinchauhan/goiib
       - go build
       - cd CustomerDatabaseV1
