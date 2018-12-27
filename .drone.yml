@@ -1,12 +1,22 @@
 workspace:
+  base: /go/src/github.com/
+  path: /src
+pipeline:
+  setupgoiib:
+    image: golang
+    commands:
+      - go get -u github.com/vinchauhan/goiib
+      - go build
+      - go install
+workspace:
   base: /artifacts
-  path: /repo
+  path: /iib
 pipeline:
   build:
     image: vinchauhan/my-iib:rc
     commands:
       - cd CustomerDatabaseV1
-      - export PATH=$PATH:/build/:/opt/ibm/iib-10.0.0.10/server/bin/
+      - export PATH=$PATH:/go/bin/:/opt/ibm/iib-10.0.0.10/server/bin/
       - /usr/local/bin/iib_env.sh
       - goiib clean
       - goiib compile
