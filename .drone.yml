@@ -7,7 +7,7 @@ pipeline:
     commands:
       - cd CustomerDatabaseV1
       - export PATH=$PATH:/go/bin/:/opt/ibm/iib-10.0.0.10/server/bin/
-      - /usr/local/bin/iib_env.sh & goiib clean & goiib compile
+      - /usr/local/bin/iib_env.sh && goiib compile
     environment:
       - LICENSE=accept  
       
